@@ -1,0 +1,15 @@
+<h1>New Game</h1>
+
+<div class="grid-container">
+<% 10.times do %>
+  <div class="grid-item"><%= @letters.sample%></div>
+  <% end %>
+</div>
+<div class= "container">
+<label for="formControlInput" class="form-label">What is the longest word you can find?</label>
+<form action="/score" method="get" data-turbo="false">
+<input type="text" name="word" class="form-control" id="formControlInput" placeholder="Word here">
+<button type="submit">Play</button>
+<%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+</form>
+</div>

@@ -13,3 +13,21 @@
  *= require_tree .
  *= require_self
  */
+ body {
+  background-color: rgb(231, 231, 231);
+ }
+ .grid-container {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 16px;
+  padding: 16px;
+  margin: 0 auto;
+ }
+
+ .grid-item{
+  border: 1px solid black;
+  padding: 16px;
+  border-radius: 5px;
+  background-color: lightblue;
+  margin: 0 auto;
+ }
